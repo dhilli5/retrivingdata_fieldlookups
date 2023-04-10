@@ -1,0 +1,34 @@
+<html>
+
+<body>
+
+
+    
+    <center>
+        
+        <table border="3px">
+
+            <tbody>
+                <h1>This is the address table details</h1>
+            </tbody
+
+            <tr>
+                <th>st_name</th>
+                <th>city</th>
+                <th>state</th>
+            </tr>
+
+            {% for ad in address %}
+            <tr>
+                <td>{{ad.st_name}}</td>
+                <td>{{ad.city}}</td>
+                <td>{{ad.state}}</td>
+
+            </tr>
+            {% endfor %}
+        </table>
+</center>
+
+
+</body>
+</html>

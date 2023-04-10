@@ -1,0 +1,32 @@
+<html>
+
+<body>
+
+
+    
+    <center>
+       
+
+        <table border="3px">
+
+
+            <tbody>
+                <h1>This is the course table details</h1>
+            </tbody>
+            <tr>
+                <th>course_name</th>
+            </tr>
+
+            {% for CO in course %}
+            <tr>
+                <td>{{CO.course_name}}</td>
+
+            </tr>
+            {% endfor %}
+    </table>
+
+    </center>
+
+
+</body>
+</html>

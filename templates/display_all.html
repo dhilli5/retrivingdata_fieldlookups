@@ -1,0 +1,86 @@
+<html>
+
+<body>
+
+<div>
+<center>
+       
+<table border="3px">
+            <tbody>
+                <h1 >This is the course table details</h1>
+            </tbody>
+            <tr>
+                <th>course_name</th>
+            </tr>
+
+            {% for CO in course %}
+            <tr>
+                <td>{{CO.course_name}}</td>
+
+            </tr>
+            {% endfor %}
+    </table>
+</center>
+</div>
+<div>
+<center>
+       
+    <table border="3px">
+        <tbody>
+            <h1>This is the student table details</h1>
+
+
+        </tbody>
+
+
+        <tr>
+            <th>course_name</th>
+            <th>st_name</th>
+            <th>mno</th>
+        </tr>
+
+        {% for st in  student %}
+        <tr>
+            <td>{{st.course_name}}</td>
+            <td>{{st.st_name}}</td>
+            <td>{{st.mno}}</td>
+
+        </tr>
+        {% endfor %}
+</table>
+</center>
+</div>
+
+<div>
+<center>
+        
+        <table border="3px">
+
+            <tbody>
+                <h1>This is the address table details</h1>
+            </tbody
+
+            <tr>
+                <th>st_name</th>
+                <th>city</th>
+                <th>state</th>
+            </tr>
+
+            {% for ad in address %}
+            <tr>
+                <td>{{ad.st_name}}</td>
+                <td>{{ad.city}}</td>
+                <td>{{ad.state}}</td>
+
+            </tr>
+            {% endfor %}
+        </table>
+</center>
+
+</div>
+
+
+
+
+</body>
+</html>

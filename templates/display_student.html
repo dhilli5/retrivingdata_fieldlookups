@@ -1,0 +1,36 @@
+<html>
+
+<body>
+
+
+    
+    <center>
+       
+        <table border="3px">
+            <tbody>
+                <h1>This is the student table details</h1>
+
+
+            </tbody>
+
+
+            <tr>
+                <th>course_name</th>
+                <th>st_name</th>
+                <th>mno</th>
+            </tr>
+
+            {% for st in  student %}
+            <tr>
+                <td>{{st.course_name}}</td>
+                <td>{{st.st_name}}</td>
+                <td>{{st.mno}}</td>
+
+            </tr>
+            {% endfor %}
+</table>
+</center>
+
+
+</body>
+</html>
